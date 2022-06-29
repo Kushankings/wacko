@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/player"
+    tools:context=".player">
+
+    <VideoView
+        android:id="@+id/playlistvideo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:foregroundGravity="center"/>
+
+
+    <ImageView
+        android:id="@+id/player_thumbnail"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:layout_marginTop="44dp"
+        android:adjustViewBounds="true"
+        android:elevation="15dp"
+        android:onClick="kk"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/loadmyimage" />
+
+    <ListView
+        android:id="@+id/playerlistview"
+        android:layout_width="match_parent"
+        android:layout_height="429dp"
+        android:choiceMode="singleChoice"
+        android:listSelector="@drawable/searchbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/player_thumbnail"
+        app:layout_constraintVertical_bias="0.728">
+
+    </ListView>
+
+    <com.example.jean.jcplayer.view.JcPlayerView
+        android:id="@+id/jcplayer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:next_icon_color="@color/cardview_light_background"
+        app:pause_icon_color="@color/cardview_light_background"
+        app:play_icon_color="@color/cardview_light_background"
+        app:previous_icon_color="@color/cardview_light_background"
+        app:progress_color="@color/cardview_light_background"
+        app:random_icon_color="@color/cardview_light_background"
+        app:repeat_icon_color="@color/cardview_light_background"
+        app:seek_bar_color="@color/cardview_light_background"
+        app:text_audio_current_duration_color="@color/cardview_light_background"
+        app:text_audio_duration_color="@color/cardview_light_background"
+        app:text_audio_title_color=  "@color/cardview_light_background"
+        >
+
+    </com.example.jean.jcplayer.view.JcPlayerView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
