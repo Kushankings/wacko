@@ -29,8 +29,7 @@ Android Studio
 <img src="https://user-images.githubusercontent.com/49302789/176360412-0ca1af14-df96-4107-be36-47475db983d7.jpeg" width=20% height=20%> |
 <img src="https://user-images.githubusercontent.com/49302789/176360416-2f3810c2-9a14-4f62-9784-d658675be8dc.jpeg" width=20% height=20%> 
 
-# Firebase Console
-<img src="https://user-images.githubusercontent.com/49302789/176361234-5367d1aa-ac74-4474-bd0a-29bc8bf643eb.JPG" width=70% height=70%> 
+
 
 
 
